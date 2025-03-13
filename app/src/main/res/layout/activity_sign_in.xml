@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#121212"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"
+        android:text="¡Registrate!"/>
+
+    <EditText
+        android:id="@+id/etrEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_model"
+        android:hint="Correo electrónico"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3B3B3"/>
+
+    <EditText
+        android:id="@+id/etrPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_model"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3B3B3"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/etrConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_model"
+        android:inputType="textPassword"
+        android:hint="Confirmar contraseña"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B3B3B3"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_model"
+        android:text="Registrar"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
