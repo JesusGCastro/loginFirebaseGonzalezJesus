@@ -9,7 +9,6 @@
     android:background="#121212"
     tools:context=".LoginActivity">
 
-    <!-- Logo de Netflix -->
     <ImageView
         android:layout_width="300dp"
         android:layout_height="120dp"
@@ -17,7 +16,6 @@
         android:scaleType="fitCenter"
         android:src="@drawable/netflixlogo"/>
 
-    <!-- Campo de correo -->
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
@@ -28,7 +26,6 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#B3B3B3"/>
 
-    <!-- Campo de contraseña -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"

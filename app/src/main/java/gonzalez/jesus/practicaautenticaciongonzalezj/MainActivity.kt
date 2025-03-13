@@ -18,17 +18,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val email = intent.extras!!.getString("user")
-
+        val email = intent.extras?.getString("user")
         val user: TextView = findViewById(R.id.tvUser)
         val button: Button = findViewById(R.id.btnLogout)
 
-        button.setOnClickListener({
+        if (email != null) {
+            user.text = "Bienvenido, $email"
+        }
+
+        button.setOnClickListener {
             Firebase.auth.signOut()
             val intent = Intent(this, LoginActivity::class.java)
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
-        })
-
+        }
     }
 }

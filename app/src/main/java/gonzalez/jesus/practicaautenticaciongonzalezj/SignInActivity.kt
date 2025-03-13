@@ -61,6 +61,7 @@ class SignInActivity : AppCompatActivity() {
                     val intent = Intent(this, MainActivity:: class.java)
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
+                    finish()
                 } else {
                     Log.w("ERROR", "signInWithEmail: fairule", task.exception)
                     Toast.makeText(

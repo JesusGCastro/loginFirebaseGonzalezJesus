@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159095873956",
+    "project_id": "ejemplologin-a88a7",
+    "storage_bucket": "ejemplologin-a88a7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159095873956:android:06486fa8b1d75e88cda131",
+        "android_client_info": {
+          "package_name": "gonzalez.jesus.practicaautenticaciongonzalezj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLUuDBsHqjK0E8-bstZEw7sy7toOzDTZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,6 +14,7 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.auth
+import com.google.firebase.initialize
 
 class LoginActivity : AppCompatActivity() {
 
@@ -31,8 +32,18 @@ class LoginActivity : AppCompatActivity() {
 
         val button: Button = findViewById(R.id.btnLogin)
 
+        val buttonR: Button = findViewById(R.id.btnGoRegister)
+
         errorTv.visibility = View.INVISIBLE
 
+        button.setOnClickListener{
+            login(email.text.toString(), password.text.toString())
+        }
+
+        buttonR.setOnClickListener{
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
